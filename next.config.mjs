@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  experimental: {
+    appDir: false // Désactive le nouveau routeur
+  },
+  // Désactive Turbopack si nécessaire
+  turbo: undefined
 };
 
 export default nextConfig;
